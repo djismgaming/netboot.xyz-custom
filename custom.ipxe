@@ -1,7 +1,7 @@
 #!ipxe
 
 :start
-echo Greetings, wayfaring stranger
+echo Greetings, net-booter!
 
 :global_vars
 # set site name
