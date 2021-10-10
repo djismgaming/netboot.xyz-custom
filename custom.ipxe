@@ -8,7 +8,7 @@ set site_name mini.local
 # set boot_domain 192.168.0.10/2.0.50
 
 # set location of memdisk
-set memdisk http://192.168.0.10/memdisk
+set memdisk http://${boot_domain}/memdisk
 
 # set location of custom netboot.xyz live assets
 # set live_endpoint https://github.com/netbootxyz
