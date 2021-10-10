@@ -30,6 +30,12 @@ iseq ${platform} efi && set ipxe_disk netboot.xyz-snponly.efi || set ipxe_disk n
 # set default boot timeout
 set boot_timeout 300000
 
+:hirensPE
+imgfree
+kernel http://${boot_domain}/memdisk iso raw
+initrd http://${boot_domain}:8888/HBCD_PE_x64.iso
+boot 
+
 ######################################
 # Media Locations for Licensed Distros
 ######################################
