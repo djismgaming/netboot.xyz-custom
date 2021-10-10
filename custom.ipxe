@@ -2,6 +2,7 @@
 
 :start
 echo Greetings, net-booter!
+sleep 5
 
 :global_vars
 # set site name
@@ -27,7 +28,7 @@ set sigs http://${boot_domain}/sigs/
 iseq ${platform} efi && set ipxe_disk netboot.xyz-snponly.efi || set ipxe_disk netboot.xyz-undionly.kpxe
 
 # set default boot timeout
-set boot_timeout 60000
+set boot_timeout 300000
 
 ######################################
 # Media Locations for Licensed Distros
