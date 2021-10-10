@@ -2,8 +2,7 @@
 
 :start
 echo Greetings, net-booter!
-echo Updated...
-sleep 3
+sleep 2
 
 :global_vars
 # set site name
