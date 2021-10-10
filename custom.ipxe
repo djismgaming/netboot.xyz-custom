@@ -32,7 +32,7 @@ set boot_timeout 300000
 
 :hirensPE
 imgfree
-kernel http://${boot_domain}/memdisk iso raw
+kernel http://boot.netboot.xyz/memdisk iso raw
 initrd http://${boot_domain}:8888/HBCD_PE_x64.iso
 boot 
 
