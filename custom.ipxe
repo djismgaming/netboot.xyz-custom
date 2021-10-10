@@ -30,6 +30,20 @@ iseq ${platform} efi && set ipxe_disk netboot.xyz-snponly.efi || set ipxe_disk n
 # set default boot timeout
 set boot_timeout 300000
 
+:custom
+clear custom_choice
+menu This is a Test Menu
+item --gap This is the first sub menu
+item hirensPE ${space} Loading a kernel and initrd
+item option_two ${space} Loading an ISO
+item --gap This is a second sub menu
+item option_three ${space} Loads another custom sub menu
+item option_four ${space} This is option four
+choose custom_choice || goto custom_exit
+echo ${cls}
+goto ${custom_choice}
+goto custom_exit
+
 :hirensPE
 imgfree
 kernel http://boot.netboot.xyz/memdisk iso raw
