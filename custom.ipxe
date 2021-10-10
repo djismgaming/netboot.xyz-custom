@@ -1,5 +1,8 @@
 #!ipxe
 
+:start
+echo Greetings, wayfaring stranger
+
 :global_vars
 # set site name
 set site_name mini.local
